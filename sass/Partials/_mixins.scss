@@ -1,0 +1,13 @@
+@mixin flexing($horizontal, $vertical) {
+  display: flex;
+  justify-content: $horizontal;
+  align-content: $vertical;
+}
+
+@mixin griding($divisions, $fraction, $horizontal, $vertical) {
+  display: grid;
+  grid-template-columns: repeat($divisions, $fraction);
+  grid-template-rows: auto auto auto;
+  justify-content: $horizontal;
+  align-content: $vertical;
+}
