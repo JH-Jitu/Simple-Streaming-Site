@@ -18,6 +18,8 @@ body {
 // Container (Applying in full body)
 .container {
   @include griding(12, 1fr, none, none);
+  grid-template-rows: 60px auto auto;
+
   min-height: 100vh;
 }
 
